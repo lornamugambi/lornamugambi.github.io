@@ -1,0 +1,113 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    background-color: #30012c;
+    color: rgba(255, 255, 255, 0.966);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;/* styles.css */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    #navbar {
+        background-color: hsl(0, 0%, 0%);
+        color: rgba(255, 255, 255, 0);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+    
+    
+    .nav-links a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    
+    .menu-btn {
+        display: none;
+    }
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+        }
+    
+        .menu-btn {
+            display: block;
+        }
+    }
+    
+}
+
+
+#background {
+    /* Add styles for your about section here */
+    background-image: url('https://media.licdn.com/dms/image/D4D03AQFm8zHpMQSJRA/profile-displayphoto-shrink_200_200/0/1685354080668?e=1718236800&v=beta&t=WZrUq7dIVDRffcd61sj62yHVmQ7qd4Q6ZnED98njKWs');
+    background-size: contain;
+    background-position: center;
+    background-color: black;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(3, 3, 3);
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.animated-text {
+    font-size: 3em; /* Adjust as needed */
+    animation: animateText 5s infinite;
+}
+
+@keyframes animateText {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+#summary {
+    /* Add styles for your summary section here */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+#skills {
+    /* Add styles for your skills section here */
+    background-color: #f4f4f4;
+    padding: 20px;
+
+}
+
+.publications-container, .interests-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
