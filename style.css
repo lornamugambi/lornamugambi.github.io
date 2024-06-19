@@ -1,113 +1,146 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* body {
+  background: black;
+} */
+.button {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 4px 7px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 3000ms infinite;
+  -moz-animation: glowing 3000ms infinite;
+  -o-animation: glowing 3000ms infinite;
+  animation: glowing 3000ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #14ee2a; -webkit-box-shadow: 0 0 3px #14ee2a; }
+  50% { background-color: #1418ee; -webkit-box-shadow: 0 0 10px #1418ee; }
+  100% { background-color: #14ee2a; -webkit-box-shadow: 0 0 3px #14ee2a; }
 }
 
-#navbar {
-    background-color: #30012c;
-    color: rgba(255, 255, 255, 0.966);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+@-moz-keyframes glowing {
+  0% { background-color: #14ee2a; -moz-box-shadow: 0 0 3px #14ee2a; }
+  50% { background-color: #1418ee; -moz-box-shadow: 0 0 10px #1418ee; }
+  100% { background-color: #14ee2a; -moz-box-shadow: 0 0 3px #14ee2a; }
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;/* styles.css */
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    #navbar {
-        background-color: hsl(0, 0%, 0%);
-        color: rgba(255, 255, 255, 0);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-    }
-    
-    .nav-links {
-        list-style: none;
-        display: flex;
-    }
-    
-    
-    .nav-links a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-    }
-    
-    .menu-btn {
-        display: none;
-    }
-    
-    /* Responsive design */
-    @media (max-width: 768px) {
-        .nav-links {
-            display: none;
+@-o-keyframes glowing {
+  0% { background-color: #14ee2a; box-shadow: 0 0 3px #14ee2a; }
+  50% { background-color: #1418ee; box-shadow: 0 0 10px #1418ee; }
+  100% { background-color: #14ee2a; box-shadow: 0 0 3px #14ee2a; }
+}
+
+@keyframes glowing {
+        0% {
+          background-color: #14ee2a;
+          box-shadow: 0 0 5px #14ee2a;
         }
-    
-        .menu-btn {
-            display: block;
+        50% {
+          background-color: #1418ee;
+          box-shadow: 0 0 20px #1418ee;
         }
+        100% {
+          background-color: #14ee2a;
+          box-shadow: 0 0 5px #14ee2a;
+        }
+}
+
+.wrapper {
+  padding: 0px;
+  padding-top: 0px;
+}
+
+.image--cover {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center right;
+     object-position: center right;
+}
+
+div.demo {
+    display:table;
+    width:100%;
+}
+div.demo span {
+    display:table-cell;
+    text-align:center;
+}
+span.collab {
+  font-size:16px;
+  font-weight:bold;
+  color:#328fa8;
+}
+
+
+.hoverZoomLink {
+  /* position: relative; */
+  margin: auto;
+  overflow: hidden;
+  /* width: 540px; */
+}
+.hoverZoomLink img {
+  /* max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: auto; */
+  transform: scale(1);
+}
+
+.hoverZoomLink:hover img {
+  transform: scale(1.1);
+}
+
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
     }
-    
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
 }
-
-
-#background {
-    /* Add styles for your about section here */
-    background-image: url('https://media.licdn.com/dms/image/D4D03AQFm8zHpMQSJRA/profile-displayphoto-shrink_200_200/0/1685354080668?e=1718236800&v=beta&t=WZrUq7dIVDRffcd61sj62yHVmQ7qd4Q6ZnED98njKWs');
-    background-size: contain;
-    background-position: center;
-    background-color: black;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(3, 3, 3);
-    position: relative;
-    overflow: hidden;
-    
-}
-
-.animated-text {
-    font-size: 3em; /* Adjust as needed */
-    animation: animateText 5s infinite;
-}
-
-@keyframes animateText {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.5); }
-    100% { transform: scale(1); }
-}
-
-#summary {
-    /* Add styles for your summary section here */
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-
-#skills {
-    /* Add styles for your skills section here */
-    background-color: #f4f4f4;
-    padding: 20px;
-
-}
-
-.publications-container, .interests-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-
