@@ -1,70 +1,145 @@
-<!DOCTYPE HTML>
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="google-site-verification" content="mzyi5h_x1DvmnvvOynztP5h3mA2mdBpUjfhySMB9NNI" />
       <!-- Google Tag Manager -->
-      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-NS48J6H');</script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NS48J6H');
+    </script>
       <!-- End Google Tag Manager -->
+    <title>Lorna Mugambi | Blog</title>
+    <meta name="author" content="Lorna Mugambi" />
+    <link rel="icon" href="assets/imgs/logo3.png" />
 
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Lorna Mugambi | Blog</title>
-      <meta name="author" content="Lorna Mugambi">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <link rel="stylesheet" type="text/css" href="stylesheet.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-      <link rel="icon" href="assets/imgs/logo3.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+      :root {
+        --primary-color: #dda0dd;
+        --secondary-color: #f8f0fb;
+        --background-color: #f9f9f9;
+        --text-primary: #333333;
+        --text-secondary: #666666;
+        --accent-color: #ffdab9;
+        --accent-pink: #ffb6c1;
+      }
+      body {
+        font-family: 'Public Sans', sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-primary);
+      }
+    </style>
    </head>
-
 <body>
-  <!-- Navigation bar -->
-  <nav class="navbar">
-    <div class="navbar-container">
-      <div class="logo">
-        <a href="index.html">Lorna Mugambi</a>
+    <div class="flex min-h-screen">
+      <aside class="bg-white fixed left-0 top-0 h-screen w-80 p-6 shadow-lg hidden lg:flex flex-col">
+        <div class="flex flex-col items-center text-center">
+          <img src="assets/imgs/myprofile.jpg" alt="Lorna Mugambi" class="rounded-full w-36 h-36 mx-auto mb-4 object-cover border-4 border-[var(--accent-pink)]" />
+          <h1 class="text-2xl font-bold text-[var(--text-primary)]">Lorna Mugambi</h1>
+          <p class="text-base text-[var(--text-secondary)]">Researcher at DSAIL</p>
+          <p class="text-base text-[var(--text-secondary)]">Nairobi, Kenya</p>
       </div>
-      <ul class="nav-links">
-        <li><a href="index.html">About</a></li>
-        <li><a href="updates.html">Updates</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="tutorials.html">Tutorials</a></li>
-        <li><a href="blogs.html">Blogs</a></li>
-      </ul>
+        <nav class="mt-8 flex-grow">
+          <ul class="space-y-2">
+            <li><a class="w-full text-left px-4 py-3 rounded-lg text-base font-semibold transition-colors duration-200 hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)]" href="index.html">Home</a></li>
+            <li><a class="w-full text-left px-4 py-3 rounded-lg text-base font-semibold transition-colors duration-200 hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)]" href="updates.html">Updates</a></li>
+            <li><a class="w-full text-left px-4 py-3 rounded-lg text-base font-semibold transition-colors duration-200 hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)]" href="publications.html">Publications</a></li>
+            <li><a class="w-full text-left px-4 py-3 rounded-lg text-base font-semibold transition-colors duration-200 hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)]" href="tutorials.html">Tutorials</a></li>
+            <li><a class="w-full text-left px-4 py-3 rounded-lg text-base font-semibold transition-colors duration-200 hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)] bg-[var(--secondary-color)] text-[var(--primary-color)]" href="blogs.html">Blogs</a></li>
+          </ul>
+        </nav>
+        <div class="flex justify-center space-x-4 mt-6">
+          <a class="text-gray-500 hover:text-[var(--primary-color)] transition-colors duration-200" href="https://github.com/lornamugambi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.085 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.304-5.467-1.334-5.467-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.874.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a class="text-gray-500 hover:text-[var(--primary-color)] transition-colors duration-200" href="https://www.linkedin.com/in/lorna-mugambi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.784 1.764-1.75 1.764zm13.5 11.268h-3v-5.604c0-1.337-.026-3.061-1.866-3.061-1.868 0-2.154 1.459-2.154 2.967v5.698h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.839-1.563 3.038 0 3.6 2.001 3.6 4.604v5.592z"/></svg>
+          </a>
+        </div>
+      </aside>
+
+      <div class="flex flex-col w-full">
+        <header class="bg-white shadow-md lg:hidden sticky top-0 z-10">
+          <div class="mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+              <div class="flex items-center">
+                <a href="index.html" class="text-xl font-bold text-[var(--primary-color)]">Lorna Mugambi</a>
+              </div>
+              <div class="flex lg:hidden">
+                <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                  <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hidden lg:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)]">Home</a>
+              <a href="updates.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)]">Updates</a>
+              <a href="publications.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)]">Publications</a>
+              <a href="tutorials.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)]">Tutorials</a>
+              <a href="blogs.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)]">Blogs</a>
+            </div>
     </div>
-  </nav>
+        </header>
 
-  <!-- Blog section -->
-  <table style="width:100%;max-width:1200px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tbody>
-            <tr>
-              <td>
-                <h1>Blogs</h1>
-                <p>Coming soon! Blog posts will be added here in the future.</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-  </tbody></table>
+        <main class="flex-grow lg:ml-80 p-8">
+          <section class="mb-12" id="blogs">
+            <h2 class="text-3xl font-bold text-[var(--primary-color)] mb-6">Blogs</h2>
+            <div class="bg-white rounded-lg shadow-sm p-6">
+              <p class="text-[var(--text-secondary)]">Coming soon! Blog posts will be added here in the future.</p>
+            </div>
+          </section>
+        </main>
 
-   <footer class="site-footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Lorna Mugambi. All rights reserved.</p>
-      <!-- Optional: Add social links here if you want them in the footer too -->
-      <div class="footer-social">
-        <a href="https://github.com/lornamugambi"><img src="assets/github.svg" alt="Github" class="footer-icon"></a>
-        <a href="https://www.linkedin.com/in/lorna-mugambi/"><img src="assets/linkedin-112.svg" alt="LinkedIn" class="footer-icon"></a>
+        <footer class="bg-white mt-12 p-8 border-t border-gray-200">
+          <div class="max-w-7xl mx-auto text-center">
+            <h3 class="text-2xl font-bold text-[var(--primary-color)] mb-4">Get in Touch</h3>
+            <div class="flex justify-center space-x-6 mb-6">
+              <a class="social-link" href="https://github.com/lornamugambi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.085 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.304-5.467-1.334-5.467-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.874.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a class="social-link" href="https://www.linkedin.com/in/lorna-mugambi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.784 1.764-1.75 1.764zm13.5 11.268h-3v-5.604c0-1.337-.026-3.061-1.866-3.061-1.868 0-2.154 1.459-2.154 2.967v5.698h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.839-1.563 3.038 0 3.6 2.001 3.6 4.604v5.592z"/></svg>
+              </a>
+            </div>
+            <p class="text-sm text-[var(--text-secondary)]">© 2025 Lorna Mugambi. All rights reserved.</p>
+          </div>
+        </footer>
       </div>
     </div>
-  </footer>
 
+    <script>
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenuButton && mobileMenu) {
+        const menuIconOpen = mobileMenuButton.querySelector('svg:first-child');
+        const menuIconClose = mobileMenuButton.querySelector('svg:last-child');
+        mobileMenuButton.addEventListener('click', () => {
+          const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+          mobileMenuButton.setAttribute('aria-expanded', String(!isExpanded));
+          mobileMenu.classList.toggle('hidden');
+          if (menuIconOpen && menuIconClose) {
+            menuIconOpen.classList.toggle('hidden');
+            menuIconClose.classList.toggle('hidden');
+          }
+        });
+      }
+    </script>
 </body>
 </html>
